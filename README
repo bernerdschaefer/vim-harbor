@@ -1,0 +1,22 @@
+== vim-harbor
+vim-harbor is a vim plugin for working with harbor projects inspired by tpope/vim-rails.
+Simply copy plugin/harbor.vim to ~/.vim/plugin to get started.
+
+== Usage
+
+  H <file>			| :edit from root directory
+  HT <file>			| :tabedit from root directory
+  HS <file>			| :split from root directory
+  HV <file>			| :vsplit from root directory
+
+  H(TSV)lib			| open lib/project_name.rb
+  H(TSV)lib <file>		| open and complete from lib/projectname
+  H(TSV)controller <file>	| open and complete from lib/project_name/controllers
+  H(TSV)model <file>		| open and complete from lib/project_name/models
+  H(TSV)view <file>		| open and complete from lib/project_name/views
+  H(TSV)test <file>		| open and complete from test
+  H(TSV)integrationtest <file>	| open and complete from test/integration
+  H(TSV)unittest <file>		| open and complete from test/unit
+  H(TSV)public <file>		| open and complete from public
+  H(TSV)stylesheet <file>	| open and complete from public/stylesheets
+  H(TSV)javascript <file>	| open and complete from public/javascripts
