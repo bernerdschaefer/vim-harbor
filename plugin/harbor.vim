@@ -3,22 +3,8 @@
 
 " Utility {{{1
 
-function! s:shellesc(arg) abort
-  if a:arg =~ '^[A-Za-z0-9_/.-]\+$'
-    return a:arg
-  elseif &shell =~# 'cmd' && a:arg !~# '"'
-    return '"'.a:arg.'"'
-  else
-    return shellescape(a:arg)
-  endif
-endfunction
-
 function! s:sub(str,pat,rep) abort
   return substitute(a:str,'\v\C'.a:pat,a:rep,'')
-endfunction
-
-function! s:gsub(str,pat,rep) abort
-  return substitute(a:str,'\v\C'.a:pat,a:rep,'g')
 endfunction
 
 function! s:find_project_name() abort
