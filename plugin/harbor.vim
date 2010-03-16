@@ -63,7 +63,7 @@ function! s:basiccomplete(A,base) abort
 endfunction
 
 " }}}1
-" Controllers {{{1
+" Navigation Commands {{{1
 
 function! s:addfilecmds(type)
   let t = a:type
@@ -170,3 +170,5 @@ function s:javascriptComplete(A,L,P)
   return s:basiccomplete(a:A, 'public/javascripts/')
 endfunction
 call s:addfilecmds("javascript")
+
+" }}}1
